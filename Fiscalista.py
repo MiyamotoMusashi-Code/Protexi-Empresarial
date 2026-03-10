@@ -79,8 +79,7 @@ with col_resultado:
 
 
         client = anthropic.Anthropic(
-            # defaults to os.environ.get("ANTHROPIC_API_KEY")
-            api_key="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",
+        api_key=st.secrets["ANTHROPIC_API_KEY"]
         )
         # Replace placeholders like {{CONSULTA_FISCAL}} with real values,
         # because the SDK does not support variables.
